@@ -113,6 +113,10 @@ def login(
     return {"access_token": access_token, "token_type": "bearer"}
 
 
+# Import here to avoid circular import
+from app.core.dependencies import get_current_user
+
+
 @router.get("/me", response_model=UserResponse)
 def get_current_user_info(
     current_user: User = Depends(get_current_user)
@@ -123,7 +127,3 @@ def get_current_user_info(
     Requires: Valid JWT token
     """
     return current_user
-
-
-# Import here to avoid circular import
-from app.core.dependencies import get_current_user

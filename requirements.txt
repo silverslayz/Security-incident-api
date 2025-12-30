@@ -13,8 +13,8 @@ passlib[bcrypt]==1.7.4            # Password hashing
 python-multipart==0.0.6           # Form data parsing
 
 # Validation
-pydantic==2.5.3
-pydantic-settings==2.1.0
+pydantic>=2.10.5  # Updated for Python 3.14 compatibility (pre-built wheels)
+pydantic-settings>=2.7.0  # Updated for compatibility with pydantic 2.10+
 email-validator==2.1.0
 
 # AWS SDK (for S3 file uploads)

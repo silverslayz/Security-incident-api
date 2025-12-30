@@ -71,6 +71,16 @@ If you need PostgreSQL support:
 - Install PostgreSQL on your system
 - Update `.env` with PostgreSQL connection string
 
+### Issue: `Cargo, the Rust package manager, is not installed` or pydantic-core compilation error
+**Issue**: Error during pip install: "Cargo, the Rust package manager, is not installed" when installing pydantic-core
+
+**Solution**: This occurs when using Python 3.14+ with older pydantic versions that don't have pre-built wheels.
+- The `requirements.txt` has been updated to use `pydantic>=2.10.5` which includes pre-built wheels for Python 3.14
+- No Rust installation required
+- Simply run: `pip install -r requirements.txt`
+
+If you encounter this with Python 3.14+, the pydantic versions have been updated to support it.
+
 ### Issue: `ModuleNotFoundError`
 **Solution**: Make sure you've activated the virtual environment and installed dependencies:
 ```bash

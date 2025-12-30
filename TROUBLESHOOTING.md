@@ -81,6 +81,15 @@ If you need PostgreSQL support:
 
 If you encounter this with Python 3.14+, the pydantic versions have been updated to support it.
 
+### Issue: `AssertionError` in SQLAlchemy with Python 3.14
+**Issue**: Error when starting the application: "AssertionError: Class <class 'sqlalchemy.sql.elements.SQLCoreOperations'> directly inherits TypingOnly..."
+
+**Solution**: This is a Python 3.14 compatibility issue with older SQLAlchemy versions.
+- The `requirements.txt` has been updated to use `sqlalchemy>=2.0.36` and `alembic>=1.14.0`
+- These versions include Python 3.14 support
+- Upgrade dependencies: `pip install -r requirements.txt --upgrade`
+- Restart the application: `uvicorn app.main:app --reload`
+
 ### Issue: `ModuleNotFoundError`
 **Solution**: Make sure you've activated the virtual environment and installed dependencies:
 ```bash

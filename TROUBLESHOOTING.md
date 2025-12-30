@@ -58,6 +58,19 @@ Note: Some features may have slight differences between SQLite and PostgreSQL, b
 
 ## Common Setup Issues
 
+### Issue: `pg_config executable not found` or `psycopg2-binary` installation error
+**Issue**: Error when installing `psycopg2-binary` package: "Error: pg_config executable not found"
+
+**Solution**: This error occurs because PostgreSQL is not installed. For local development with SQLite:
+1. The `psycopg2-binary` line is already commented out in `requirements.txt`
+2. Simply install dependencies normally: `pip install -r requirements.txt`
+3. Use SQLite in your `.env` file: `DATABASE_URL=sqlite:///./incident_db.sqlite`
+
+If you need PostgreSQL support:
+- Uncomment the `psycopg2-binary` line in `requirements.txt`
+- Install PostgreSQL on your system
+- Update `.env` with PostgreSQL connection string
+
 ### Issue: `ModuleNotFoundError`
 **Solution**: Make sure you've activated the virtual environment and installed dependencies:
 ```bash

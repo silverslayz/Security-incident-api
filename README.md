@@ -286,6 +286,9 @@ Response:
 
 ## Development Roadmap
 
+### Work In Progress 
+- ‼️ Docker containerization
+- ‼️ UI/UX 
 ### Completed
 - ✅ JWT authentication
 - ✅ Role-based access control

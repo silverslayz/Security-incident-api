@@ -1,4 +1,4 @@
-# Security Incident Management API
+# WIP Security Incident Management API
 
 A production-ready REST API for managing security incidents, built with modern backend technologies and security best practices. This system provides comprehensive incident tracking, role-based access control, audit logging for compliance, and real-time analytics.
 
@@ -286,6 +286,9 @@ Response:
 
 ## Development Roadmap
 
+### Work In Progress 
+- ‼️ Docker containerization
+- ‼️ UI/UX 
 ### Completed
 - ✅ JWT authentication
 - ✅ Role-based access control
@@ -347,10 +350,12 @@ This project is open source and available under the MIT License.
 
 ## Contact
 
-Jesus Almonte - [LinkedIn](https://www.linkedin.com/in/jesus-almonte-0754a823a) - JesusAlmonte216@gmail.com
+Jesus Almonte - [LinkedIn](https://www.linkedin.com/in/jesus-almonte-0754a823a) 
 
 Project Link: [https://github.com/silverslayz/security-incident-api](https://github.com/silverslayz/security-incident-api)
 
 ---
+
+** AI tools (e.g., ChatGPT) were used to help generate ideas, troubleshoot errors, and improve code readability. All final code decisions, integration, and testing were done by me
 
 **Built with Python FastAPI | Showcasing backend engineering, security practices, and cloud-ready architecture**

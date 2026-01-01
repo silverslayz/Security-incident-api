@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\app",
+    "\\app\\api\\v1",
+    "\\tests"
   ],
+  "SelectedNode": "\\app",
   "PreviewInSolutionExplorer": false
 }

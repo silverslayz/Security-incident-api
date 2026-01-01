@@ -1,4 +1,4 @@
 {
   "TestFramework": "unittest",
-  "Interpreter": "env2\\Scripts\\python.exe"
+  "Interpreter": "Workspace|Workspace|.venv"
 }
